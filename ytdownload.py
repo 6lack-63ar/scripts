@@ -7,14 +7,14 @@ import requests
 import tqdm
 import os
 
-path = "/home/kali/Desktop/Hits"
 
 def Download(link):
-    file =pytube.YouTube(link)
-    d_file=file.streams.get_highest_resolution()
+   
+    
     try:
         print("starting download")
-        d_file.download(output_path=path)
+         file =pytube.YouTube(link)
+         sd_file=file.streams.get_highest_resolution()
     except:
         print("******************************An Error occured******************************")
     print("Download Succesfull........")
